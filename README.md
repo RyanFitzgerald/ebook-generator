@@ -40,3 +40,7 @@ Finally, HTML to PDF conversion is done via `puppeteer` and can be found in `scr
 Since the PDF generation works by first converting to HTML and then to PDF, you can customize the styles of the PDF (to a degree). The current styles can be found in the `/styles` directory. The styles that currently exist are `normalize.css` (to normalize styles), `highlight.css` (styles for the code blocks), and finally `styles.css` (the general styles).
 
 It's also important to note that the Page Header and Footer styles are added inline within `scripts/generate-pdf.js` as they are added on generation by puppeteer and don't technically exist in the HTML when being generated.
+
+## License 
+
+Licensed under MIT. Do what you want with it!
