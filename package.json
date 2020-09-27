@@ -1,0 +1,25 @@
+{
+  "name": "ebook-generator",
+  "version": "0.0.1",
+  "description": "Generate ebooks (PDF) from md files",
+  "scripts": {
+    "build": "npm run combine && npm run convert && npm run generate",
+    "combine": "node scripts/combine.js",
+    "convert": "node scripts/convert-to-html.js",
+    "generate": "node scripts/generate-pdf.js"
+  },
+  "keywords": [
+    "ebook",
+    "md",
+    "pdf",
+    "generator"
+  ],
+  "author": "Ryan Fitzgerald",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "puppeteer": "^5.3.1",
+    "showdown": "^1.9.1",
+    "showdown-highlight": "^2.1.5"
+  }
+}
