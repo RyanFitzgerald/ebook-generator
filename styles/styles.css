@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/*
+ * Load font locally to avoid issues with text selection 
+ * after generation of PDF
+ */
+@font-face {
+  font-family: 'Inter';
+  src: url('../Inter.ttf')  format('truetype')
+}
 
 /* --- General Styles --- */
 
 html {
-  box-sizing: border-box;
   color: #606c7d;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  overflow-x: hidden;
-}
-
-*,
-:after,
-:before {
-  box-sizing: inherit;
 }
 
 img {
