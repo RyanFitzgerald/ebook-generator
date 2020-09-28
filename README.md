@@ -15,6 +15,10 @@ The build pipeline consists of 3 steps:
 - `generate`: takes the generated HTML output and generates a PDF
 - `build`: runs the above commands in the correct order
 
+## Demo
+
+You can download the example output PDF by [clicking here](https://github.com/RyanFitzgerald/ebook-generator/raw/master/output/book.pdf).
+
 ## Getting Started
 
 Example outputs can be found in the `/output` directory. More specifically, `output/book.pdf` represents the final generated PDF.
