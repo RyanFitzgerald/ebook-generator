@@ -32,8 +32,8 @@ const footer = '<div></div>';
     await page.addStyleTag({path: path.resolve(__dirname, '../styles/styles.css')});
 
     // Give time to load images, etc
-    await page.waitForTimeout(3000);
-  
+    await new Promise(r => setTimeout(r, 3000));
+
     // Generate PDF file
     await page.pdf({
       format: 'Letter',
